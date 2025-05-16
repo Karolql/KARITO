@@ -1,0 +1,132 @@
+/* ESTRUCTURA PARA HACER QUE EL FOOTER ESTÉ HASTA ABAJO */
+html, body {
+    height: 100%; /* Necesario para que flex funcione a nivel de toda la página */
+    margin: 0;
+    padding: 0;
+    display: flex; /* FLEX APLICADO AQUÍ */
+    flex-direction: column; /* Coloca los elementos en columna (header, main, footer) */
+  }
+  
+  main.content {
+    flex: 1; /* Hace que el contenido ocupe el espacio disponible */
+    padding: 2rem;
+  }
+  
+
+
+/* Estilo general */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f4f8;
+    color: #333;
+  }
+  
+  header {
+    background: #004b87;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  /* FLEX APLICADO AQUÍ */
+  nav ul.menu {
+    display: flex; /* Flex aplicado */
+    justify-content: center; /* Centrado horizontal */
+    padding: 0;
+    list-style: none;
+    background: #0074cc;
+    margin: 0;
+    flex-wrap: wrap; /* Permite que se ajuste en pantallas pequeñas */
+  }
+  
+  nav ul.menu li {
+    margin: 0 1rem;
+  }
+  
+  nav ul.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+  }
+  
+  nav ul.menu li a:hover {
+    background: #005fa3;
+    border-radius: 5px;
+  }
+  
+  main.content {
+    padding: 2rem;
+  }
+  
+  /* FLEX APLICADO AQUÍ */
+  .cards {
+    display: flex; /* Flex aplicado */
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap; /* Permite adaptación responsive */
+    justify-content: center; /* Centrado horizontal */
+  }
+  
+  .card {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card a, .button {
+    display: inline-block;
+    margin-top: 1rem;
+    background: #0074cc;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #004b87;
+    color: white;
+    margin-top: 2rem;
+  }
+  
+  /* MEDIA QUERY APLICADA AQUÍ */
+  @media (max-width: 768px) {
+    .cards {
+      flex-direction: column; /* Cambia de fila a columna */
+      align-items: center;
+    }
+  
+    nav ul.menu {
+      flex-direction: column; /* Hace el menú vertical */
+      align-items: center;
+    }
+  
+    nav ul.menu li {
+      margin: 0.5rem 0;
+    }
+  
+    .card {
+      width: 90%; /* Adaptación a pantallas pequeñas */
+    }
+  
+    main.content {
+      padding: 1rem;
+    }
+  
+    header h1 {
+      font-size: 1.2rem;
+    }
+  }
+  
