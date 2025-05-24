@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vida Escolar - Galería y Noticias</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+</head>
+<body>
+  <header>
+    <div class="contenedor">
+      <h1>Vida Escolar</h1>
+      <nav>
+        <a href="#galeria">Galería</a>
+        <a href="#noticias">Eventos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contenedor">
+    <section id="galeria">
+      <h2>Galería de Imágenes</h2>
+      <div class="grid-galeria">
+        <img src="../imagenes/a.jpeg" alt="Laboratorio" class="img-clickable">
+        <img src="../imagenes/campo.jpg" alt="Cancha de Fut-Bol" class="img-clickable">
+        <img src="../imagenes/cancha.jpg" alt="Cancha de Basquetbool" class="img-clickable">
+        <img src="../imagenes/ins.jpg" alt="Instalaciones" class="img-clickable">
+        <img src="../imagenes/inst.jpg" alt="Instalaciones" class="img-clickable">
+        <img src="../imagenes/pant.jpg" alt="Instalaciones" class="img-clickable">
+        <img src="../imagenes/ce.jpg" alt="Instalaciones" class="img-clickable">
+
+
+      </div>
+    </section>
+
+    <section id="noticias">
+      <h2>Noticias / Eventos Recientes</h2>
+      <div id="contenedor-noticias" class="grid-noticias"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contenedor">
+      <p>&copy; 2025 Escuela Ejemplo - Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Modal Lightbox -->
+  <div id="modal" class="modal">
+    <span class="cerrar">&times;</span>
+    <img class="modal-contenido" id="img-grande">
+    <div id="caption"></div>
+  </div>
+
+  <script src="../java/script.js"></script>
+</body>
+</html>
